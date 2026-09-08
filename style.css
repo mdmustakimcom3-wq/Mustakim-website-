@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Bengali", sans-serif;
+    background: #f5f7fb;
+    color: #102a43;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+    box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e50920;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.logo-area h1 {
+    font-size: 22px;
+}
+
+.logo-area h1 span {
+    color: #e50920;
+}
+
+.logo-area p {
+    font-size: 12px;
+}
+
+.desktop-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: #102a43;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    min-height: 390px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 20, 45, .95),
+            rgba(0, 60, 100, .72)
+        );
+    display: flex;
+    align-items: center;
+    padding: 40px 7%;
+    color: white;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.blood-drop {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.3);
+}
+
+.tag {
+    background: #e50920;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   AUTH
+===================================== */
+
+.auth-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.auth-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+}
+
+.auth-card input,
+.auth-card select,
+.search-box select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5dce5;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.auth-card button,
+.search-box button {
+    width: 100%;
+    border: 0;
+    padding: 14px;
+    border-radius: 10px;
+    background: #e50920;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.error {
+    background: #ffe5e8;
+    color: #c50018;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.section-title span {
+    font-size: 40px;
+}
+
+.section-title > div {
+    flex: 1;
+}
+
+
+/* =====================================
+   BLOOD REQUEST BOARD
+===================================== */
+
+.request-section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.new-request-btn {
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: #e50920;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.request-form {
+    margin-bottom: 25px;
+}
+
+.request-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.request-card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.07);
+    border-left: 5px solid #e50920;
+}
+
+.request-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.request-time {
+    font-size: 11px;
+    color: #8993a4;
+}
+
+.request-card h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.request-card p {
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.request-msg {
+    background: #f5f7fb;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-top: 8px !important;
+}
+
+.request-card .donor-actions {
+    margin-top: 12px;
+}
+
+.request-card .donor-actions a {
+    background: #e50920;
+    flex: none;
+    width: 100%;
+}
+
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    display: grid;
+    grid-template-columns: 1fr 1fr 220px;
+    gap: 12px;
+}
+
+.search-box select {
+    margin: 0;
+}
+
+.search-box button {
+    width: auto;
+}
+
+
+/* =====================================
+   DONORS
+===================================== */
+
+.donor-section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.donor-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+}
+
+.donor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.07);
+    display: flex;
+    gap: 15px;
+}
+
+.donor-avatar {
+    min-width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #e50920;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.donor-info {
+    width: 100%;
+}
+
+.donor-info h3 {
+    font-size: 18px;
+}
+
+.blood-badge {
+    display: inline-block;
+    background: #ffe2e5;
+    color: #e50920;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.donor-info p {
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.donor-actions {
+    display: flex;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.donor-actions button,
+.donor-actions a {
+    flex: 1;
+    padding: 9px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+    background: #1683ff;
+}
+
+.donor-actions a {
+    background: #0aaa57;
+}
+
+.no-result {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+/* =====================================
+   CHAT
+===================================== */
+
+.chat-section {
+    max-width: 1150px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.chat-container {
+    height: 650px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,.1);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+
+
+/* USER LIST */
+
+.chat-users {
+    border-right: 1px solid #e5e9ef;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #102f50;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chat-users > input {
+    margin: 15px;
+    width: calc(100% - 30px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.chat-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f1f3;
+    cursor: pointer;
+}
+
+.chat-user:hover {
+    background: #f7f9fc;
+}
+
+.small-avatar {
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e50920;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-details strong {
+    display: block;
+}
+
+.user-details small {
+    color: #777;
+}
+
+.online,
+.offline {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.online {
+    background: #12b76a;
+}
+
+.offline {
+    background: #bbb;
+}
+
+
+/* CHAT AREA */
+
+.chat-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-top {
+    min-height: 70px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-top strong {
+    display: block;
+    font-size: 18px;
+}
+
+.chat-top small {
+    color: #0aaa57;
+}
+
+.call-button {
+    background: #0aaa57;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f4f7fb;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 12px;
+    padding: 11px 14px;
+    border-radius: 15px;
+}
+
+.message.mine {
+    margin-left: auto;
+    background: #1683ff;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.message.theirs {
+    margin-right: auto;
+    background: white;
+    border-bottom-left-radius: 4px;
+}
+
+.message-time {
+    display: block;
+    font-size: 10px;
+    margin-top: 4px;
+    opacity: .7;
+}
+
+.empty-chat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8993a4;
+    text-align: center;
+}
+
+.empty-chat:first-letter {
+    font-size: 50px;
+}
+
+
+/* MESSAGE FORM */
+
+.message-form {
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #eee;
+}
+
+.message-form input {
+    flex: 1;
+    border: 1px solid #d8dde5;
+    border-radius: 25px;
+    padding: 13px 18px;
+    font-family: inherit;
+    outline: none;
+}
+
+.message-form button {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: #1683ff;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: #102f50;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+.developer {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.developer strong {
+    color: #ffd43b;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 8px 15px;
+    }
+
+    .logo-area h1 {
+        font-size: 17px;
+    }
+
+    .logo-area p {
+        font-size: 10px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+
+    .hero {
+        min-height: 330px;
+        padding: 25px 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .blood-drop {
+        width: 110px;
+        height: 110px;
+        font-size: 55px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .auth-section {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .auth-card {
+        padding: 20px;
+    }
+
+
+    .search-section,
+    .donor-section,
+    .chat-section {
+        padding: 12px;
+        margin: 25px auto;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+
+    .donor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .request-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .request-section {
+        padding: 12px;
+        margin: 25px auto;
+    }
+
+    .new-request-btn {
+        width: 100%;
+    }
+
+
+    .chat-container {
+        height: 680px;
+        grid-template-columns: 1fr;
+    }
+
+    .chat-users {
+        display: none;
+    }
+
+    .chat-area {
+        height: 680px;
+    }
+
+    .message {
+        max-width: 85%;
+    }
+
+    .chat-top {
+        padding: 12px;
+    }
+
+    .call-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+
+    .donor-card {
+        padding: 15px;
+    }
+
+}
